@@ -10,11 +10,13 @@ import './index.css'
 import MainLayouts from './Layouts/MainLayouts';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import ErrorPage from './Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayouts></MainLayouts>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
